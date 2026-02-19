@@ -1,289 +1,267 @@
-// const para=getElementById("para")
-// para.textcontain
-
-// const para=document.querySelectorAll(" .para")
-// para[0].textContent="THIS is updated one"
-// para[1].computedStyleMap.colour="green"
-// console.log
-
-// const para=document.querySelectorAll(" .para")
-// para[0].innerHTML="<h1>THIS is heading</h1>"
-// console.log(container)
-
-// const button=document.querySelector("button")
-// button.classList.add("btn")
-// button.classList.add("btn2")
-
-
-
-// function show(){
-//     alert("you have clicked the button")
-//  }
-
-// button.addEventListener('mouseover',show)
-// button.removeEventListener('click'), show)
-
-// const btn=document.querySelector("#btn")
-// const stop=document.querySelector('#stop')
-    
-// btn.addEventlistener('keyup', (event)=>{
-//     console.log(event.key)
-// })
-
-// stop.addEventlistener('click', function(){
-//     btn.removeEventListener('click', show)
-//})
-
-// const form=document.querySelector("form")
-// form.addEventListener('submit', (event)=>{
-//     event.preventDefault()
-//     console.log(event.srcElement[0].value)
-//     console.log(event.srcElement[1].value)
-//     console.log(event)
-//     console.log("button clicked")
-// })
-
-
 // console.log('we will right code')
-// console.log('we will write code')
 
+// debugger
 // console.log(a)
 // var a=3453
 // let b=456;
-
 // console.log(a)
 // console.log(b)
 
-// function print(){
+// function test(){
 //     let c=40
 //     console.log("inside fn")
 // }
-
-// print()
-
+// test()
 // let total=345;
 
-// function calculate(){
-    // console.log(total)
-//     var total=565
-// }
+// console.log("this is the beginning of script.js file")
+// setTimeout(() => {
+//     console.log("After 2 seconds")
+// }, 2000);
+// console.log("this is the end of script.js file")
 
-// calculate()
-  
-// console.log("this is the beginning of the code")
-// const timeout=setTimeout(()=>{console.log("after 2 se")},2000)
-// clearTimeout(timeout)
-// console.log("this is the end of the code")
-
-// const interval=setInterval(() => {console.log("printing at every two second")}, 2000);
-
-// setTimeout(() => {clearInterval(interval)}, (1000))
-
-// let i = 1;
-// const interval = setInterval(() => {
-//     console.log(i);
-//     i++;
-//     if (i > 10) {
-//         clearInterval(interval);
-//     }
-// }, 2000); // 2 seconds
-
-// let count=0;
-
-// const interval=setInterval(()=>{
-//     count+=1
-//     console.log(count)
-//     if(count===100){
+// const interval=setInterval(() => {console.log("printing at every 2 seconds")}, 2000);
+// setTimeout(() => {clearInterval(interval)},10000);
+// const timeout=setTimeout(() => {console.log("after 2 second")},2000);
+// clearTimeout(timeout);
+// let num=0;
+// const interval=setInterval(() => {
+//     num+=1
+//     console.log(num);
+//     if(num===10){
 //         clearInterval(interval)
-//     }
-// },1000)
 
-// const studentname=document.querySelector('#name')
-// const button=document.querySelector('.btn')
-// const list=document.querySelector('.list')
+//     }
+// },1000) 
+    
+// const taskName=document.querySelector("#name")  
+// const button=document.querySelector(".btn")  
+// const list=document.querySelector(".list")
 
 // button.addEventListener("click",()=>{
 //     // #creating the element
 //     const li=document.createElement("li")
-//     const deletebutton=document.createElement("button")
-//     // providing the text
-//     li.innerText=studentname.value
-//     deletebutton.innerText="delete"
+//     const deleteButton=document.createElement("button")
 
-//     deletebutton.addEventListener('click', ()={
+//     // providng value to the elements
+//     li.innerText=taskName.value
+//     deleteButton.innerText="Delete" 
+//     deleteButton.addEventListener("click",()=>{
 //         // li.remove()
-//         list.removechild(li)
-//     }
-
-
-//     li.appendChild(deletebtn)
+//         list.removeChild(li)
+//     })
+//     li.appendChild(deleteButton)
 //     list.appendChild(li)
-//     studentname.value=""
-// })
+//     taskName.value=""
+// })   
 
-// console.log("starting homework...");
+
+// console.log("starting homework");
 
 // setTimeout(() => {
-//     console.log("homework done");
-//     console.log("starting dinner");
+//   console.log("homework done!");
+//   console.log("starting dinner");
+
+//   setTimeout(() => {
+//     console.log("dinner done!");
+//     console.log("getting ready to go out");
 
 //     setTimeout(() => {
-//         console.log("dinner done !");
-//         console.log("getting ready to go out");
+//       console.log("going to playground");
+//     }, 1000);
 
-//         setTimeout(() => {
-//             console.log("going to the playgroung!");
-//         }, 1000);  
+//   }, 2000);
 
-//     }, 1500);
-
-// }, 2000);
-
-
-// function finishHomework(callback) {
-// console.log("Starting homework...");
-// setTimeout(() => {
-// console.log("Homework done!"); callback();
-
-// }, 2000);
-
+// }, 3000);
+   
+// function finishHomework(callback){
+//     console.log("starting homework");
+//     setTimeout(() => {
+//       console.log("homework done!");
+//       callback();
+//     }, 2000);
 // }
 
-// function eatDinner (callback) {
-// console.log("Starting dinner...");
-// setTimeout(() => {
-// console.log("Dinner done!");
-// callback();
-
-// }, 1500);
+// function haveDinner(callback){
+//     console.log("starting dinner");
+//     setTimeout(() => {
+//       console.log("dinner done!");
+//       callback();
+//     }, 2000);
 // }
-
-// function goToPlayground() {
-// console.log("Going to the playground!");
+// function goToPlayground(){
+//     console.log("going to playground");
 // }
-
-// // Chained in steps, but cleaner
-
-// finishHomework(() => { eatDinner(() => { goToPlayground(); });
-
+//     haveDinner(()=>{
+//         finishHomework(()=>{
+//             goToPlayground();
+//     }); 
 // });
 
+// const p= new Promise((resolve,reject)=>{
+//     console.log("going to do homework")
+//    setTimeout(() => {
+//     const done=true;
+//     if(done){
+//         resolve("success")
+//     }else{
+//         reject("failed to fetch data form server")
+//     }
+// },3000)
 
-// const p= new Promise((res, rej)=>{
-//     console. log ("Going to do the homework!!")
-
-//     setTimeout(()=>{
-//       const done=true;
-//       if(done) {
-//           res ("Success")
-//       }else{
-//         rej ("Failed to fetch Data from the server")
-//       }
-//     },3000)
 // })
-
-
-//  p.then((a)=>{
-//     console.log(a)
-// }).catch((err)=>{
-//     console.log(err)
-// }).finally(()=>{          
-//     console.log("finally blocked")
-// })
-
-// promises changing
-
-// function dohomework(){
-//     const p=new Promise((res,rej)=>{
-//         setTimeout(()=>{
-//             let done=true;
-//             if(done){
-//                 console.log("homework complete")
-//                 res("homework not done")
-//             }
-//             else{
-//                 rej("homework not done")
-//             }
-           
-//         },2000)
-//     })
-//     return p;
-// }
-// function eatDinner(){
-//     const p=new Promise((res,rej)=>{
-//         setTimeout(()=>{
-//             let done=true;
-//             if(done){
-//                 console.log("dinner complete")
-//                 res("dinner not done")
-//             }
-//             else{
-//                 rej("dinner not done")
-//             }
-            
-//         },2000)
-//     })
-//     return p;
-// }
-
-// dohomework().then((data)=>{
+// p.then((data)=>{
 //     console.log(data)
+// }).catch((error)=>{
+//     console.log(error)
+// })
+// .finally(()=>{
+//     console.log("promise is settled")
+// })
+
+// // i dont understand this study again
+// console.log("starting homework");
+// function dohomework(){
+//     return p=new Promise((resolve,reject)=>{
+//         setTimeout(() => {
+//             let done=true;
+//             if(done){
+//                 console.log("homework completed")
+//                 resolve("homework done")
+//             }else{
+//                 reject("homework not done")
+//             }
+
+//         },2000);     
+
+//     })
+    
+// }  
+  
+// function eatdinner(){
+//     return p=new Promise((resolve,reject)=>{
+//         setTimeout(() => {
+//             let done=true;
+//             if(done){
+//                 console.log("dinner completed")
+//                 resolve("dinner done")
+//             }else{
+//                 reject("dinner not done")
+//             }
+
+//         },2000);     
+
+//     })
+// }
+// function goToPlayground(){
+//     return p=new Promise((resolve,reject)=>{
+//         setTimeout(() => {
+//             let done=true;
+//             if(done){
+//                 console.log("going to playground")
+//                 resolve("going to playground")
+//             }else{
+//                 reject("not allowed")
+//             }
+
+//         },2000);     
+
+//     })
+// }
+
+// dohomework()
+// .then((data)=>{
+//     console.log(data)  
+//      return eatdinner() 
 // }).then((data)=>{
 //     console.log(data)
-//     return gotoplaygroung()
-// }),then((data)=>{
+//     return goToPlayground()
+// }).then((data)=>{
 //     console.log(data)
 // })
 
-// console.log("first line")
-// setTimeout(()=>{
-//     console.log("inside timeout")
-// },0)
-// const p=new Promise((res,rej)=>{
-//     res()
+// function orderfood(){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(() => {
+//             console.log("food ordered")
+//             resolve()
+//         }, 2000);
+//     })
+// }
+
+// function preparefood(){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(() => {
+//             console.log("food prepared")
+//             resolve()
+//         }, 2000);
+//     })
+// }
+
+// function deliverfood(){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(() => {
+//             console.log("food delivered")
+//             resolve()
+//         }, 2000);
+//     })
+// }
+
+// async function foodOrder(){
+//     await orderfood()
+//     await preparefood()
+    
+//     await deliverfood()
+
+//     console.log("food is ready to eat")
+// }
+// foodOrder()
+
+
+// form.addEventListener("submit",(e)=>{
+//     e.preventDefault();
+//     const title=form.title.value;
+//     const category=form.category.value;
+//     const des=form.description.value;
+//     const password=form.password.value;
+//     console.log(title,category,des,password)
+//     const card=document.createElement("div")
+//     card.classList.add("card")
+//     card.innerHTML=`
+//     <h2>${title}</h2>
+//     <p>${category}</p>
+//     <p>${des}</p>
+//     <button class="delete-btn">Delete</button>
+//     `
+//     const deleteBtn=card.querySelector(".delete-btn")
+//     deleteBtn.addEventListener("click",()=>{
+//         card.remove()
+//     })
+//     document.body.appendChild(card)
+
+//     card.querySelector(".delete-btn").addEventListener("click",()=>{
+//         card.remove()
+//     })
+//     eventcard.appendChild(card)
 // })
-// onabort.then(()=>{
-//     console.log("inside promise")
-// })
-// console.log("last line")
 
-function orderfood(){
-    return new Promise((res,rej)=>{
-       setTimeout(() => {
-        console.log("food delivered")
-        res()
-       }, 2000);
-    })
+async function getdata(){
+    try{
+        const response=await fetch("https://jsonplaceholder.typicode.com/posts",{
+            method:"POST",
+            headers:{
+                "Content-Type":"application/json"
+            },
+            body:JSON.stringify({
+                title:"my post",
+                body:"this is my post",
+                userId:1
+            })
+        })
+        const data=await response.json()
+        console.log(data)
+    }catch(error){
+        console.log("error",error)
+    }   
 }
-
-  function preparedfood(){
-      return new promises((res,rej)=>{
-        setTimeout(() => {
-         console.log("food prepared")
-         res()
-       }, 2000);
-    })
-}
-
-orderfood()
-.then(()=>{
-    console.log("eatind food")
-})
-
-function deliverFood(){
-    return new Promise ((res, rej)=>{
-        setTimeout(() =>{
-            console.log ("Food delivered")
-            res ()
-        },2000)
-    })
-}
-
-async function foodorder(){
-    await orderFood ()
-    await prepareFood()
-    await deliverFood()
-    console.log("Enjoy your food")
-}
-
-foodorder()
+getdata()
