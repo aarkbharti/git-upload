@@ -245,23 +245,57 @@
 //     eventcard.appendChild(card)
 // })
 
-async function getdata(){
-    try{
-        const response=await fetch("https://jsonplaceholder.typicode.com/posts",{
-            method:"POST",
-            headers:{
-                "Content-Type":"application/json"
-            },
-            body:JSON.stringify({
-                title:"my post",
-                body:"this is my post",
-                userId:1
-            })
-        })
-        const data=await response.json()
-        console.log(data)
-    }catch(error){
-        console.log("error",error)
-    }   
+// async function getdata(){
+//     try{
+//         const response=await fetch("https://jsonplaceholder.typicode.com/posts",{
+//             method:"POST",
+//             headers:{
+//                 "Content-Type":"application/json"
+//             },
+//             body:JSON.stringify({
+//                 title:"my post",
+//                 body:"this is my post",
+//                 userId:1
+//             })
+//         })
+//         const data=await response.json()
+//         console.log(data)
+//     }catch(error){
+//         console.log("error",error)
+//     }   
+// }
+// getdata()
+
+// let obj={
+//     name:"Aark",
+//     age:18
+// }
+
+// localStorage.setItem("obj",JSON.stringify(obj))
+
+// localStoragesetItem("name","Aark")
+// localStorage.setItem("age",18)
+
+// const name=localStorage.getItem("name")
+// const age=localStorage.getItem("age")
+
+// console.log(JSON.parse(localStorage.getItem("obj")))
+
+// localStorage.removeItem("age")
+// // localStorage.clear() /// clear everything
+
+// sessionStorage.setItem("Name","Aark")
+// sessionStorage.setItem("Age",18)
+
+// console.log(sessionStorage.getItem("Name"))
+// console.log(sessionStorage.getItem("Age"))
+
+// // sessionStorage.removeItem("Age")
+
+document.cookie="name=aark; expires=Fri, 20 feb 2026 23:59:59 UTC;"
+document.cookie="age=18; expires=Fri, 20 feb 2026 23:59:59 UTC;path='/'"
+
+async function sample(){
+    await fetch("/http://127.0.0.1:5500/web%20dev/index.html")
 }
-getdata()
+sample()
